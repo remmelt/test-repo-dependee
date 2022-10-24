@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "test-repo-dependee"
+version = "0.1.0"
+description = ""
+authors = ["Remmelt Pit <remmelt.pit@source.ag>"]
+readme = "README.md"
+packages = [{include = "test_repo_dependee"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
